@@ -39,12 +39,6 @@ void uaf() {
     printf("New allocation of new pointer: %s\n", new_ptr);
     printf("Current value of dangling pointer: %s\n", ptr);
 
-    // In conclusion, a dangling pointer can still access the memory location that has been freed. 
-    // If new memory is allocated at the same location, the dangling pointer may access or modify the 
-    // newly allocated memory.
-
-    // Setting the pointer to NULL ensures it doesn't point to invalid memory
-
 }
 
 
@@ -55,3 +49,10 @@ int main() {
 
     return 0;
 }
+
+
+    // In conclusion, a dangling pointer can still access the memory location that has been freed. 
+    // If new memory is allocated at the same location, the dangling pointer may access or modify the 
+    // newly allocated memory.
+
+    // Setting the pointer to NULL ensures it doesn't point to invalid memory
